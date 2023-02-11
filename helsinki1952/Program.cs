@@ -151,7 +151,6 @@ namespace helsinki1952
             int goldCount = 0;
             int silverCount = 0;
             int bronzeCount = 0;
-            int medalsSum = 0;
 
             foreach (var i in sportList)
             {
@@ -168,7 +167,9 @@ namespace helsinki1952
                         break;
                 }
             }
-            medalsSum = goldCount + silverCount + bronzeCount;
+
+            int medalsSum = goldCount + silverCount + bronzeCount;
+
             Console.WriteLine(
                 $"Arany: {goldCount}\n"+
                 $"Ezüst: {silverCount}\n"+
