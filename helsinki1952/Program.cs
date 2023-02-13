@@ -58,7 +58,7 @@ namespace helsinki1952
         }
         static public void Feladat7(string fileLocation, string oldData, string newData)
         {
-            FileStream fs = new FileStream(fileLocation, FileMode.Truncate);
+            FileStream fs = new FileStream(fileLocation, FileMode.Create);
             StreamWriter sw = new StreamWriter(fs);
 
             for (int i = 0; i < sportList.Count; i++)
