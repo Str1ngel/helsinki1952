@@ -174,14 +174,11 @@ namespace helsinki1952
                 $"Arany: {goldCount}\n"+
                 $"Ezüst: {silverCount}\n"+
                 $"Bronze: {bronzeCount}\n"+
-                $"Összesen: {medalsSum}"
-                );
+                $"Összesen: {medalsSum}");
         }
         static public void Feladat3()
-        {
-            Console.WriteLine($"3. feladat:\n" +
+            => Console.WriteLine($"3. feladat:\n" +
                 $"Pontszerző helyezések száma: {sportList.Count}");
-        }
         static public void Reader(string fileLocation)
         {
             StreamReader sr = new StreamReader(fileLocation);
